@@ -2,7 +2,7 @@
 function getOrgs(username) {
   $.ajax({
     type: 'GET',
-    url: 'https://api.github.com/users/' + username + '/orgs?access_token=cf7fc9652c44b05ddb069f2f145682bc4c1c0a4d',
+    url: 'https://api.github.com/users/' + username + '/orgs?access_token=6f97f9f7b4e06a341f1bc403c5442e995bb409eb',
     error: function(errorObj, errorText, errDesc) {
        var errString = errorText.toUpperCase() + "! User is " + errDesc.toLowerCase() + "!";
        $('.displayError').text(errString);
