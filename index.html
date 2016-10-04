@@ -1,7 +1,24 @@
 <html>
 <head>
+  <title>githubOrgs</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
+
+  <div class="displayError"> </div>
+
+  <form>
+    <label for='username'>Enter username:</label>
+    <input id='username' type="text">
+  </form>
+  <button class='getOrgsBtn'>Load Github Orgs</button>
+  <button class='resetBtn'>Start Over</button>
+
+  <ul class="resultsContainer">
+  </ul>
+
+  <script src="js/jquery-3.1.1.min.js"> </script>
+  <script src="js/main.js"> </script>
 </body>
 </html>

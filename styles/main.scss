@@ -1,1 +1,69 @@
 // githubOrgs
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.displayError {
+  font-size: 4vh;
+  position: absolute;
+  top: 20%;
+}
+
+form {
+  margin: 20px;
+  font-size: 4vh;
+  input {
+    padding: 10px;
+    font-size: 3vh;
+    width: 100%;
+  }
+}
+
+.getOrgsBtn, .resetBtn {
+  background: #0d2636;
+  color: white;
+  height: 10%;
+  width: 20%;
+  outline-style: none;
+  border-radius: 10px;
+  font-size: 2vw;
+}
+
+.resetBtn {
+  display: none;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-direction: column;
+    .org {
+      display: flex;
+      align-items: center;
+      background: #eee;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 10px;
+      font-family: arial, sans-serif;
+      font-size: 5vh;
+      color: #999;
+      transition: all .2s ease;
+      &:hover {
+        transform: scale(1.5);
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+    }
+}
